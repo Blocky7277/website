@@ -39,3 +39,15 @@ div.content {
     flex: 1;
     padding: 2%;
 }
+
+.divider {
+  font-size: 3rem;
+  font-family: var(--sans);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.hidden {
+  transition: opacity 0.2s;
+  opacity: 0;
+}

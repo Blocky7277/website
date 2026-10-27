@@ -1,12 +1,25 @@
+@keyframes flyInLeft{
+    from {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 section#hero {
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 0 15% clamp(24px, 7vw, 150px);
-    margin-top: 8%;
+    padding: 0 clamp(24px, 7vw, 150px) 15% clamp(24px, 7vw, 150px);
+    margin-top: 12%;
     box-sizing: border-box;
+    animation-name: flyInLeft;
+    animation-duration: 0.5s;
 }
 
 .inner-hero {
@@ -39,7 +52,7 @@ section#hero {
 }
 
 .desc {
-    line-height: 1.6;
+    /* line-height: 1.6; */
     max-width: 600px;
     margin: .9rem 0 0 0;
     filter: brightness(.60);
