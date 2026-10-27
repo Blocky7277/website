@@ -1,0 +1,44 @@
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    min-height: 100%;
+    border-bottom: solid var(--accent) .125rem;
+    background: var(--bg);
+    z-index: 10;
+}
+
+
+.home-icon {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.home-option {
+    padding: 0 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.05s ease-in-out;
+}
+
+.home-option:hover {
+    transform: scale(1.2);
+}
+
+span.header-content {
+    flex-grow: 1;
+    display: flex;
+    margin: 1.5%;
+    justify-content: flex-start;
+}
+
+.right {
+    margin-left: auto;
+}
+
+svg:hover {
+    stroke-color: var(--accent);
+}

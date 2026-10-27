@@ -1,0 +1,35 @@
+section#about {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15% clamp(24px, 5vw, 150px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-content {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.about {
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--accent);
+    width: 50%;
+    font-weight: 400;
+    margin-right: 10%;
+}
+
+.img {
+    width: 35%;
+    aspect-ratio: 1;
+    background-color: var(--accent);
+    border-radius: 1rem;
+}

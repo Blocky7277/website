@@ -1,0 +1,46 @@
+section#hero {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 15% clamp(24px, 7vw, 150px);
+    margin-top: 8%;
+    box-sizing: border-box;
+}
+
+.inner-hero {
+    width: 100%;
+}
+
+.greeting {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: var(--text);
+    font-weight: 400;
+}
+
+.hero,
+.job {
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.hero {
+    line-height: 1.2;
+    font-size: clamp(2rem, 8vw, 4rem);
+    padding: 0 0 1rem 0;
+    color: var(--accent);
+}
+
+.job {
+    font-size: clamp(1.5rem, 1.6vw, 2.5rem);
+    filter: brightness(.90);
+}
+
+.desc {
+    line-height: 1.6;
+    max-width: 600px;
+    margin: .9rem 0 0 0;
+    filter: brightness(.60);
+}

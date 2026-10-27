@@ -1,0 +1,53 @@
+section#projects {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15% clamp(24px, 5vw, 150px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.project {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+}
+
+.project-bottom {
+    margin-bottom: inherit;
+}
+
+.section-header {
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 4%;
+    width: 100%;
+    letter-spacing: .125em;
+}
+
+.section-header::after {
+    filter: brightness(0.2);
+    position: relative;
+    top: -0.25em;
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--text);
+    margin-left: 0.5em;
+}
+
+.section-header::before {
+    margin-right: 0.5em;
+    position: relative;
+    top: -0.25em;
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--text);
+    filter: brightness(0.2);
+}
