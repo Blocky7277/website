@@ -4,7 +4,7 @@ section#projects {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 15% clamp(24px, 5vw, 150px);
+    padding: 10% clamp(24px, 5vw, 150px);
     width: 100%;
     box-sizing: border-box;
 }

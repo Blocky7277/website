@@ -42,8 +42,9 @@ div.content {
 
 .divider {
   font-size: 3rem;
+  font-weight: 200;
   font-family: var(--sans);
-  opacity: 0.5;
+  opacity: 0.4;
   transition: opacity 0.2s;
 }
 

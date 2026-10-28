@@ -20,7 +20,7 @@ section#about {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 15% clamp(24px, 5vw, 150px);
+    padding: 10% clamp(24px, 5vw, 150px);
     width: 100%;
     box-sizing: border-box;
 }
@@ -33,7 +33,6 @@ section#about {
     width: 100%;
     box-sizing: border-box;
 }
-
 
 .about {
     font-size: clamp(1rem, 1vw, 1.2rem);
@@ -49,4 +48,18 @@ section#about {
     aspect-ratio: 1;
     background-color: var(--accent);
     border-radius: 1rem;
+}
+
+@media screen and (width <= 900px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about {
+        margin: 0;
+        width: 80%;
+    }
+    .img {
+        margin: 3rem 0 0 0 ;
+        width: 60%;
+    }
 }
