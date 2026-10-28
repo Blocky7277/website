@@ -2,6 +2,7 @@
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
+    --bg-secondary: #232730;
   --code-bg: #f4f3ec;
   --accent: #2ca870;
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -28,6 +29,7 @@
     --text: #D9D9D6;
     --text-h: #f3f4f6;
     --bg: #000816;
+    --bg-secondary: #232730;
     --code-bg: #1f2028;
     --accent: #2ca870;
 

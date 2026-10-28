@@ -47,7 +47,7 @@ section#hero {
 }
 
 .job {
-    font-size: clamp(1.5rem, 1.6vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.6vw, 2.5rem);
     filter: brightness(.90);
 }
 
@@ -56,4 +56,14 @@ section#hero {
     max-width: 600px;
     margin: .9rem 0 0 0;
     filter: brightness(.60);
+}
+
+
+@media (max-width: 500px) {
+    .inner-hero {
+        margin-top: 50%;
+    }
+    section#hero {
+        margin-bottom: 50%;
+    }
 }

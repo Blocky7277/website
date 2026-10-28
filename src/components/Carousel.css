@@ -1,0 +1,141 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    margin: 0 5%;
+    min-height: 20vh;
+}
+
+.carousel-img {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel-txt {
+    flex: 1;
+    margin-bottom: auto;
+}
+
+.carousel-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: .5;
+    font-weight: 100;
+    width: 5%;
+    aspect-ratio: 1;
+    border-radius: 3rem;
+    border: none;
+    z-index: 1;
+    background: var(--bg);
+    opacity: .7;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+.carousel-btn:hover {
+    transition: opacity .3s;
+    opacity: 1;
+}
+
+.chevron-p, .chevron-n {
+    color: var(--text);
+    scale: .5;
+    z-index: 2;
+    transform: translateX(-1%);
+    rotate: -90deg;
+}
+.chevron-n {
+    transform: translateX(1%);
+    rotate: 90deg;
+}
+
+.carousel-btn-r {
+    margin-left: -8%;
+}
+
+.carousel-btn-l {
+    margin-right: -8%;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-index {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-3vh);
+}
+
+.circle {
+    height: 1vh;
+    aspect-ratio: 1;
+    background-color: var(--text);
+    border-radius: 5rem;
+    margin: 0 0.4vw;
+    opacity: .5;
+    transition: opacity .5s;
+}
+
+.selected {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.slideshow {
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hidden:hover {
+    opacity: 0;
+    cursor: default;
+}
+
+@media (max-width: 900px) {
+    .carousel {
+        flex-direction: column;
+        gap: 4vh
+    }
+
+    .chevron-p,
+    .chevron-n {
+        scale: .7;
+    }
+
+    .carousel-btn {
+        width: 6%;
+    }
+    .circle {
+        height: .5vh;
+    }
+}

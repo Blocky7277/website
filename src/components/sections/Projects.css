@@ -4,24 +4,9 @@ section#projects {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 10% clamp(24px, 5vw, 150px);
+    padding: 10% clamp(24px, 5vw, 150px) 5%;
     width: 100%;
     box-sizing: border-box;
-}
-
-
-.project {
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 10rem;
-}
-
-.project-bottom {
-    margin-bottom: inherit;
 }
 
 .section-header {
@@ -50,4 +35,11 @@ section#projects {
     flex: 1;
     border-bottom: 1px solid var(--text);
     filter: brightness(0.2);
+}
+
+.project-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
