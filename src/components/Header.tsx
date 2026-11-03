@@ -13,7 +13,7 @@ function Header() {
                         Projects </a>
                     <a className="home-option right" href="/RAMAH_RESUME_2026.pdf">
                         Resume</a>
-                    <a className="home-option icon" href="mailto:jacob612r+outreach@gmail.com" title="Email">
+                    <a className="home-option icon" href="mailto:hello@jacobramah.com" title="Email">
                         <svg width="1.5rem" height="1.5rem" style={{scale: 1.1}} stroke="currentColor" strokeWidth="1">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
