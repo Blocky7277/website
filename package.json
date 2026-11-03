@@ -20,6 +20,11 @@
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.88.0",
     "typescript": "~6.0.3",
-    "vite": "^8.3.4"
+    "vite": "^8.3.4",
+    "vite-plugin-markdown": "^2.2.0"
+  },
+  "overrides": {
+    "markdown-it": "^14.1.0",
+    "linkify-it": "^5.0.2"
   }
 }
