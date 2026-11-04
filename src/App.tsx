@@ -1,6 +1,4 @@
 import './App.css'
-import { useState, useEffect } from 'react';
-
 import Header from './components/Header.tsx'
 import Hero from './components/sections/Hero.tsx'
 import About from './components/sections/About.tsx'
