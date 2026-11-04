@@ -68,15 +68,13 @@ section#projects {
 
 .proj-chevron-p, .proj-chevron-n {
     color: var(--bg);
-    scale: .7;
+    width: 70%;
     z-index: 2;
-    transform: translateY(-5%);
-    rotate: -90deg;
+    transform: translateY(-5%) rotate(-90deg);
 }
 
 .proj-chevron-n {
-    transform: translateY(-5%);
-    rotate: 90deg;
+    transform: translateY(5%) rotate(90deg);
 }
 
 
