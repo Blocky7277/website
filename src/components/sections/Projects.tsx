@@ -1,28 +1,35 @@
 import "./Projects.css"
 import Carousel from "../Carousel.tsx"
-import type { Project } from "../common.ts"
+import type { ProjectAttributes, Project } from "../common.ts"
 import { useState } from "react"
 
+const projects_path = "/src/projects/"
 
-const test_img_arr: string[] = ["pdm1.jpg", "pdm0.jpg"]
+const projects: Record<string, ProjectAttributes> = import.meta.glob("@/projects/*/*.md", {
+  eager: true,
+  import: "attributes",
+})
 
-const pdm:Project = {
-    title: "PDM",
-    images: test_img_arr,
-    desc: `
-    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis
-`
+const images: Record<string, string> = import.meta.glob('@/projects/*/*.{png,jpg,jpeg,webp}', {
+    eager: true,
+    query: "?url",
+    import: "default",
+})
+
+function getProj(path: string) {
+    return path.substring(projects_path.length).split("/")[0]
 }
 
-const pcm:Project = {
-    title: "PCM",
-    images: test_img_arr,
-    desc: `
-    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-`
-}
-
-const test_proj_arr: Project[] = [pdm, pcm, pdm, pcm]
+const test_proj_arr: Project[] = Object.entries(projects).map(([path, proj_attr]) => {
+    let proj_path = getProj(path)
+    let project: Project = {
+        attributes: proj_attr,
+        images: Object.entries(images)
+        .filter(([key]) => getProj(key) === proj_path)
+        .map(([, url]) => url)
+    }
+    return project
+})
 
 function Projects() {
     const [projIndex, setProjIndex] = useState(0)

@@ -118,7 +118,7 @@
 .slide {
     width: 100%;
     flex: 0 0 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     aspect-ratio: 4 / 3;
 }
 
@@ -138,15 +138,28 @@
 
 .project-header::after {
     display: flex;
+    margin-left: 1rem;
     flex: 1;
     position: relative;
     top: calc(-.5em - 1px);
     border-bottom: 1px solid var(--accent);
-    margin: 0 1.5rem 0 1rem;
     content: "";
 }
 
+.project-icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.05s ease-in-out;
+}
 
+.project-icon:hover {
+    transform: scale(1.2);
+}
 
 @media (max-width: 900px) {
     .carousel {

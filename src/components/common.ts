@@ -1,5 +1,12 @@
-export type Project = {
+export type ProjectAttributes = {
     title: string,
-    images: string[],
     desc: string,
+    in_portfolio: boolean,
+    in_archive: boolean,
+    git: string
+}
+
+export type Project = {
+    attributes: ProjectAttributes,
+    images: string[],
 }
