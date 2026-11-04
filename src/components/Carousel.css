@@ -55,15 +55,14 @@
 
 .chevron-p,
 .chevron-n {
-    outline: 1px solid lime;
     color: var(--text);
     width: 50%;
     z-index: 2;
-    transform: translateY(-5%) rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .chevron-n {
-    transform: translateY(-5%) rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .carousel-btn-r {

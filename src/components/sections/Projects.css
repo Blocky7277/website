@@ -70,11 +70,11 @@ section#projects {
     color: var(--bg);
     width: 70%;
     z-index: 2;
-    transform: translateY(-5%) rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .proj-chevron-n {
-    transform: translateY(5%) rotate(90deg);
+    transform: rotate(90deg);
 }
 
 
