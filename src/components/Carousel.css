@@ -58,11 +58,11 @@
     color: var(--text);
     width: 50%;
     z-index: 2;
-    transform: rotate(-90deg);
+    transform: translateX(-5%) rotate(-90deg);
 }
 
 .chevron-n {
-    transform: rotate(90deg);
+    transform: translateX(5%) rotate(90deg);
 }
 
 .carousel-btn-r {
@@ -174,10 +174,5 @@
 @media (max-width: 600px) {
     .carousel-btn {
         width: 7%;
-    }
-
-    .chevron-p,
-    .chevron-n {
-        width: 70%;
     }
 }
