@@ -14,7 +14,6 @@ const images = import.meta.glob('@/assets/pictures/*', {
 
 function Carousel({ project }: CarouselProps) {
     const [index, setIndex] = useState(0)
-    const getSrc = (name: string) => images[`/src/assets/pictures/${name}`]
     const proj_attr: ProjectAttributes = project.attributes
     console.log(proj_attr.git)
     return (

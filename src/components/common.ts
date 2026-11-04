@@ -3,7 +3,7 @@ export type ProjectAttributes = {
     desc: string,
     in_portfolio: boolean,
     in_archive: boolean,
-    git: string
+    git: string,
 }
 
 export type Project = {
