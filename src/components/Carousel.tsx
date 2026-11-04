@@ -6,12 +6,6 @@ type CarouselProps = {
     project: Project;
 }
 
-const images = import.meta.glob('@/assets/pictures/*', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-}) as Record<string, string>
-
 function Carousel({ project }: CarouselProps) {
     const [index, setIndex] = useState(0)
     const proj_attr: ProjectAttributes = project.attributes
