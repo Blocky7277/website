@@ -118,7 +118,7 @@
 .slide {
     width: 100%;
     flex: 0 0 100%;
-    object-fit: scale-down;
+    object-fit: fill;
     aspect-ratio: 4 / 3;
 }
 
