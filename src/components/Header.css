@@ -31,6 +31,7 @@ header {
     z-index: 10;
     animation: flyInTop;
     animation-duration: 0.7s;
+    font-family: var(--sans);
 }
 
 .home-icon, .home-option {

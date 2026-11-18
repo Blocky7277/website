@@ -1,3 +1,6 @@
+@import url("https://fontlibrary.org/face/chicagoflf");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -5,9 +8,9 @@
     --bg-secondary: #232730;
   --code-bg: #f4f3ec;
   --accent: #2ca870;
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --sans: system-ui, "IBM Plex Sans", Roboto, sans-serif;
+  --heading: ChicagoFLFRegular, sans-serif;
+  --mono: "Jetbrains Mono", Consolas, monospace;
 
   font: 18px/145% var(--mono);
   letter-spacing: 0.18px;

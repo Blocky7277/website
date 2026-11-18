@@ -11,10 +11,12 @@ section#projects {
 
 .section-header {
     display: flex;
-    font-size: max(2rem, 2vw);
+    font-size: max(2rem, 3vw);
     margin-bottom: 6%;
     width: 100%;
-    letter-spacing: .125em;
+    letter-spacing: .08em;
+    font-family: var(--sans);
+    font-weight: 500;
 }
 
 .section-header::after {

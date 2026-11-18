@@ -7,6 +7,7 @@ section#about {
     padding: 10% clamp(24px, 5vw, 150px);
     width: 100%;
     box-sizing: border-box;
+    font-family: var(--sans);
 }
 
 .about-content {

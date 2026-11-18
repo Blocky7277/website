@@ -27,6 +27,7 @@
     filter: brightness(0.9);
     font-size: clamp(.6rem, 1.2vw, 1.7rem);
     line-height: max(1rem, 1.5vw);
+    font-family: var(--sans);
 }
 
 .carousel-btn {
@@ -132,6 +133,7 @@
 }
 
 .project-header {
+    font-family: var(--heading);
     display: flex;
     font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
@@ -150,7 +152,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    padding-left: 1rem;
+    padding-left: .75rem;
     font-size: 1rem;
     text-decoration: none;
     color: var(--text);
