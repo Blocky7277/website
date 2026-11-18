@@ -14,9 +14,20 @@ function Header() {
                     <a className="home-option right" href="/RAMAH_RESUME_2026.pdf">
                         Resume</a>
                     <a className="home-option icon" href="mailto:hello@jacobramah.com" title="Email">
-                        <svg width="1.5rem" height="1.5rem" style={{scale: 1.1}} stroke="currentColor" strokeWidth="1">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
+                        <svg
+                        width="1.5rem"
+                        height="1.5rem"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ scale: 1.1 }}
+                        aria-hidden="true"
+                        >
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
                         </svg>
                     </a>
                     <a className="home-option icon-delay" href="https://github.com/Blocky7277" title="Github">
@@ -26,10 +37,20 @@ function Header() {
                         </svg>
                             </a>
                     <a className="home-option icon-delay2" href="https://www.linkedin.com/in/jacob-ramah/" title="Linkedin">
-                        <svg width="1.5rem" height="1.5rem" stroke="currentColor" strokeWidth="1">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
+                        <svg
+                        width="1.5rem"
+                        height="1.5rem"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                        >
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
                         </svg>
                     </a>
                     <button className="right menu icon-delay" title="Nav Menu">
