@@ -68,8 +68,8 @@ section#hero {
     align-self: center;
     text-align: center;
     font-size: 3rem;
-    font-weight: 200;
-    font-family: var(--heading);
+    font-weight: bolder;
+    font-family: var(--symbols);
     opacity: 0.4;
     transition: opacity 0.2s;
     cursor: default;
