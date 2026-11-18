@@ -9,7 +9,6 @@ type CarouselProps = {
 function Carousel({ project }: CarouselProps) {
     const [index, setIndex] = useState(0)
     const proj_attr: ProjectAttributes = project.attributes
-    console.log(proj_attr.git)
     return (
         <div className="carousel">
             <div className="carousel-img">
