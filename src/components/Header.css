@@ -20,21 +20,32 @@
     }
 }
 
+@keyframes flyInBottom{
+    from {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 header {
     position: sticky;
     top: 0px;
     display: flex;
     min-height: 64px;
-    height: 100%;
     border-bottom: solid var(--accent) .125rem;
     background: var(--bg);
     z-index: 10;
     animation: flyInTop;
     animation-duration: 0.7s;
     font-family: var(--sans);
+    flex-direction: column;
 }
 
-.home-icon, .home-option {
+.home-icon, .home-option, .home-option-mobile {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -48,21 +59,33 @@ header {
     text-decoration: none;
 }
 
-.home-option {
+.home-option, .home-option-mobile {
     text-decoration: none;
     color: var(--text);
+}
+
+.home-option-mobile {
+    margin: 0.25rem 0;
+    animation-duration: .5s;
+    animation-name: flyInBottom;
+    animation-fill-mode: backwards;
+
 }
 
 .home-option:hover, .home-icon:hover {
     transform: scale(1.2);
 }
 
-
+.home-option-mobile:hover {
+    background-color: var(--accent);
+    color: black;
+    transform: scale(1.2);
+}
 
 span.header-content {
     flex-grow: 1;
     display: flex;
-    margin: 0 1rem;
+    margin: .5rem 1rem;
     justify-content: flex-start;
 }
 
@@ -81,6 +104,10 @@ span.header-content {
     animation-fill-mode: backwards;
 }
 
+.icon-mobile {
+    border-radius: .2rem;
+}
+
 .icon-delay {
     animation-delay: .5s;
     animation-name: flyInRight;
@@ -95,9 +122,17 @@ span.header-content {
     animation-fill-mode: backwards;
 }
 
+div.menu {
+    height: 100%;
+}
+
+.dropdown-content {
+    display: none;
+}
+
 .menu {
     display: none;
-    padding: 0 1rem;
+    padding: 0 1%;
     font-size: 1rem;
     text-decoration: none;
     color: var(--text);
@@ -112,6 +147,14 @@ span.header-content {
     color: var(--accent);
 }
 
+.home-mobile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
 @media (max-width: 600px) {
     .home-icon {
         transition: font-size 0.2s;
@@ -122,5 +165,23 @@ span.header-content {
     }
     .menu {
         display: flex;
+    }
+    .dropdown-content {
+        display: grid;
+        grid-template-rows: 0fr;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        transition: grid-template-rows 0.4s ease-in-out;
+        border-bottom: solid var(--accent) .125rem; 
+    }
+    .dropdown-content.open {
+        grid-template-rows: 1fr;
+    }
+    .inner {
+        overflow: hidden;
+        min-height: 0;
     }
 }

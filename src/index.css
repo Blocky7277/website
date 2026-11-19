@@ -4,11 +4,11 @@
 :root {
     --text: #6b6375;
     --text-h: #08060d;
-    --bg: #fff;
+    --bg: #ffffff;
     --bg-secondary: #232730;
     --code-bg: #f4f3ec;
     --accent: #2ca870;
-    --sans: system-ui, "IBM Plex Sans", Roboto, sans-serif;
+    --sans: "Inter", Roboto, system-ui,  sans-serif;
     --heading: ChicagoFLFRegular, sans-serif;
     --mono: "Jetbrains Mono", Consolas, monospace;
     --symbols: "Iosevka Charon Mono", monospace;

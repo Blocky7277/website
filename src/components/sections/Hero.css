@@ -21,7 +21,7 @@ section#hero {
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    height: 95vh;
+    height: 100vh;
     animation: none;
     font-family: var(--sans);
 }
@@ -36,7 +36,7 @@ section#hero {
 }
 
 .greeting {
-    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.3rem);
     color: var(--text);
 }
 
@@ -61,10 +61,10 @@ section#hero {
 }
 
 .desc {
-    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.4rem);
     max-width: max(700px, 40%);
     margin: clamp(1.2rem, 1.3vw, 2rem) 0 0 0;
-    filter: brightness(.60);
+    filter: brightness(.70);
 }
 
 .scroll-indicator {
@@ -73,7 +73,7 @@ section#hero {
     font-size: 3rem;
     font-weight: bolder;
     font-family: var(--symbols);
-    opacity: 0.4;
+    opacity: 0.7;
     transition: opacity 0.2s;
     cursor: default;
     margin-top: auto;
