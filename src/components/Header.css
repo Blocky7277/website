@@ -20,17 +20,6 @@
     }
 }
 
-@keyframes flyInBottom{
-    from {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 header {
     position: sticky;
     top: 0px;
@@ -45,13 +34,15 @@ header {
     flex-direction: column;
 }
 
-.home-icon, .home-option, .home-option-mobile {
+.home-icon, .home-option, .home-option-mobile, .icon {
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 1.2% 1rem;
     transition: transform 0.1s ease-in-out;
     font-size: clamp(1rem, 2vw, 1.2rem);
+    text-decoration: none;
+    color: var(--text);
 }
 
 .home-icon {
@@ -59,27 +50,17 @@ header {
     text-decoration: none;
 }
 
-.home-option, .home-option-mobile {
-    text-decoration: none;
-    color: var(--text);
-}
-
 .home-option-mobile {
     margin: 0.25rem 0;
-    animation-duration: .5s;
-    animation-name: flyInBottom;
-    animation-fill-mode: backwards;
-
 }
 
-.home-option:hover, .home-icon:hover {
+.home-option:hover, .home-option-mobile:hover, .icon:hover {
     transform: scale(1.2);
 }
 
 .home-option-mobile:hover {
     background-color: var(--accent);
-    color: black;
-    transform: scale(1.2);
+    color: var(--bg);
 }
 
 span.header-content {
@@ -91,6 +72,10 @@ span.header-content {
 
 .right {
     margin-left: auto;
+}
+
+.icon.right {
+    margin-left: 0;
 }
 
 .home-option:hover svg {
@@ -110,20 +95,10 @@ span.header-content {
 
 .icon-delay {
     animation-delay: .5s;
-    animation-name: flyInRight;
-    animation-duration: .5s;
-    animation-fill-mode: backwards;
 }
 
 .icon-delay2 {
     animation-delay: .6s;
-    animation-name: flyInRight;
-    animation-duration: .5s;
-    animation-fill-mode: backwards;
-}
-
-div.menu {
-    height: 100%;
 }
 
 .dropdown-content {
@@ -143,7 +118,7 @@ div.menu {
     align-items: center;
 }
 
-.menu:hover {
+.menu:hover, .icon:hover {
     color: var(--accent);
 }
 
@@ -160,11 +135,18 @@ div.menu {
         transition: font-size 0.2s;
         font-size: 1.1rem;
     }
+    .home-option, .menu, .icon {
+        padding: 1.2% 0.5rem;
+    }
     .home-option {
         display:none;
     }
+    .icon.right {
+        margin-left: auto;
+    }
     .menu {
         display: flex;
+        animation-delay: .7s;
     }
     .dropdown-content {
         display: grid;

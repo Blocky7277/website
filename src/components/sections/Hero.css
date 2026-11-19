@@ -21,7 +21,7 @@ section#hero {
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    height: 100vh;
+    height: 98vh;
     animation: none;
     font-family: var(--sans);
 }
