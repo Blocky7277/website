@@ -156,7 +156,7 @@ span.header-content {
         left: 0;
         right: 0;
         background: var(--bg);
-        transition: grid-template-rows 0.4s ease-in-out;
+        transition: grid-template-rows 0.25s ease-in-out;
         border-bottom: solid var(--accent) .125rem; 
     }
     .dropdown-content.open {
