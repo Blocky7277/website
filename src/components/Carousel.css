@@ -11,7 +11,7 @@
 
 .carousel-img {
     display: flex;
-    flex: 2;
+    flex: 1.25;
     justify-content: center; align-items: center;
     flex-direction: column;
     position: relative;
@@ -19,10 +19,11 @@
 
 .carousel-txt {
     flex: 1;
-    margin-bottom: auto;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
     padding-right: 4%;
+    position: relative;
 }
 
 .txt-p {
@@ -169,6 +170,12 @@
     transform: scale(1.2);
 }
 
+.tags {
+    margin: 5% 0;
+    font-size: clamp(.6rem, 1.2vw, .9rem);
+    font-family: var(--mono);
+}
+
 @media (max-width: 900px) {
     .carousel {
         flex-direction: column;
@@ -187,7 +194,7 @@
         height: .5vh;
     }
 
-    .txt-p {
+    .carousel-txt {
         min-height: 30vh;
     }
 

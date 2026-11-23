@@ -52,6 +52,8 @@ function Carousel({ project }: CarouselProps) {
                 </a>}
                 </h2>
                 <p className='txt-p'> {proj_attr.desc} </p>
+                <div className='tags'>C, Embedded C, lol</div>
+                
             </div>
         </div>
     )
