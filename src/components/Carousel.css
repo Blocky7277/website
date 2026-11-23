@@ -173,6 +173,7 @@
 .tags {
     margin: 5% 0;
     font-size: clamp(.6rem, 1.2vw, .9rem);
+    color: var(--accent);
     font-family: var(--mono);
 }
 

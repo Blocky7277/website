@@ -3,6 +3,7 @@ export type ProjectAttributes = {
     desc: string,
     in_portfolio: boolean,
     in_archive: boolean,
+    tags: string,
     git: string,
 }
 

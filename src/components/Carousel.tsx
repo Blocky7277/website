@@ -9,6 +9,10 @@ type CarouselProps = {
 function Carousel({ project }: CarouselProps) {
     const [index, setIndex] = useState(0)
     const proj_attr: ProjectAttributes = project.attributes
+    const proj_tag_arr: string[] = proj_attr.tags ? proj_attr.tags.split(",")
+        .map((item) => item.trim())
+        .filter(Boolean) : []
+    const proj_tags = proj_tag_arr.map(tag => "#" + tag).join(", ")
     return (
         <div className="carousel">
             <div className="carousel-img">
@@ -51,8 +55,8 @@ function Carousel({ project }: CarouselProps) {
                 </svg>
                 </a>}
                 </h2>
-                <p className='txt-p'> {proj_attr.desc} </p>
-                <div className='tags'>C, Embedded C, lol</div>
+                <p className='txt-p'> { proj_attr.desc } </p>
+                <div className='tags'>{ proj_tags }</div>
                 
             </div>
         </div>
