@@ -54,11 +54,11 @@ header {
     margin: 0.25rem 0;
 }
 
-.home-option:hover, .home-option-mobile:hover, .icon:hover {
+.home-option:hover, .home-option-mobile:active, .icon:hover {
     transform: scale(1.2);
 }
 
-.home-option-mobile:hover {
+.home-option-mobile:active {
     background-color: var(--accent);
     color: var(--bg);
 }

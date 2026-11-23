@@ -9,8 +9,8 @@ function Header() {
                 <span className="header-content">
                     <a className="home-icon" href="/">
                         Home</a>
-                    <a className="home-option" href="#about">
-                        About Me</a>
+                        {/** <a className="home-option" href="#about">
+                            About Me</a> **/}
                     <a className="home-option" href="#projects">
                         Projects </a>
                     <a className="home-option right" href="/RAMAH_RESUME_2026.pdf">
@@ -75,8 +75,9 @@ function Header() {
                 </span>
                     <nav className={"dropdown-content " + (dropdown ? "open" : "")}>
                         <div className="inner">
-                            <a href="#about" className="home-option-mobile">About</a>
+                        {/** <a href="#about" className="home-option-mobile">About</a> **/}
                             <a href="#projects" className="home-option-mobile">Projects</a>
+                            <a href="/RAMAH_RESUME_2026.pdf" className="home-option-mobile">Resume</a>
                         </div>
                 </nav>
             </header>

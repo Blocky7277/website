@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="content">
         <Hero/>
-        <About/>
+        {/** <About/> **/}
         <Projects/>
       </div>
     </>

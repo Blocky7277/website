@@ -11,7 +11,7 @@
 }
 
 section {
-    padding: 10% clamp(24px, 7vw, 150px) 10% clamp(24px, 7vw, 150px);
+    padding: 10% clamp(12px, 4vw, 150px);
 }
 
 section#hero {
