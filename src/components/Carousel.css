@@ -182,7 +182,17 @@
         flex-direction: column;
         gap: 4vw;
         border-radius: 0;
+        padding: 0;
     }
+
+    .tags {
+        line-height: max(1rem, 1.5vw);
+    }
+
+    .carousel-txt {
+        padding: 0 4%;
+    }
+
     .slideshow {
         border-radius: 0;
     }
